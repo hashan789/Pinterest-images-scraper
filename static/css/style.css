@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Poppins:wght@300&family=Secular+One&display=swap');
+
+*{
+    font-family: 'Secular One', sans-serif;
+}
+
+
+.center-heading{
+    text-align: center;
+    font-family: 'Secular One', sans-serif;
+}
+
+table {
+    font-family: 'Secular One', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+p{
+    text-align:center;
+}
+
+.search_method{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_method div{
+    margin: 5vh;
+}
+
+.search_method input{
+    width: 20vw;
+}
+
+.size{
+  width:12.5vw;
+  image-rendering:auto;
+}
+
+.img{
+  width:200px;
+}
+
+.block{
+  display:inline-block;
+  margin:40px;
+}
+
+.hide{
+  display:none;
+}
+
+.button{
+    background: blue;
+    padding: 10px 15px;
+    outline: 0;
+    border: 0;
+    position: relative;
+    left: 20%;
+    top: 5vh;
+}
+
+.button a{
+  text-decoration: none;
+  color: white;
+}
+
+#google_search input{
+   padding:10px;
+   outline:0px;
+}
+
+#google_search button{
+   color: white;
+   background: blue;
+   padding: 10px;
+   border: 0px;
+   outline:0px;
+}

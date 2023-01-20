@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/scraper.js') }}"></script>
+    <title>Title</title>
+</head>
+<body>
+
+    <h1 class="center-heading">Pinterest web scraper</h1>
+
+    <script>
+        var string = "jhfkjgh";
+        var data = new Blob([string], {type: 'application/octet-stream'});
+        var fileURL = window.URL.createObjectURL(data);
+    </script>
+
+    <div>
+      {% for url in image %}
+        <div class="block">
+               <img class="size" src="{{ url }}" /><br>
+               <input type="file" id="folderSelector{{ url }}" class="hide" webkitdirectory multiple>
+               <button type="submit" value="{{ url }}" class="button"><a href="http://127.0.0.1:5000/?img={{ url }}" id="{{ url }}">Download</a></button>
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="main search_method">
+       <img src="https://logos-world.net/wp-content/uploads/2020/09/Pinterest-Logo.png" class="img">
+    </div>
+
+</body>
+</html>

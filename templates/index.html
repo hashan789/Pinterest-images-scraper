@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/scraper.js') }}"></script>
+    <title>"Pinterest" web scraper</title>
+</head>
+<body>
+    <h1 class="center-heading">Pinterest web scraper</h1>
+
+    <div class="main search_method">
+      <div>
+      <p>Please enter a keyword that you seek for</p>
+      <div class="search_method">
+        <div id="google_search">
+            <form action="." method="post">
+                <input type="text" name="pinterest" placeholder="Enter the keyword" autocomplete="off"/>
+                <button type="submit">search</button>
+            </form>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="search_method">
+        <p>Please copy and paste the link to download selected batch image</p>
+        <div id="google_search">
+            <form action="/batch" method="post">
+                <input type="text" name="pinterest_link" placeholder="Enter the link" autocomplete="off"/>
+                <button type="submit">search</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="main search_method">
+       <img src="https://logos-world.net/wp-content/uploads/2020/09/Pinterest-Logo.png" class="img">
+    </div>
+
+    <!-- <script src="scraper.js"></script> -->
+
+</body>
+</html>

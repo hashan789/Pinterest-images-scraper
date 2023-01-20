@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/scraper.js') }}"></script>
+    <title>Downloaded</title>
+</head>
+<body>
+
+        <h1 class="center-heading">Pinterest web scraper</h1>
+
+        <div class="main search_method">
+            <em>{{ res }}</em>
+        </div>
+
+         <div class="main search_method">
+           <img src="https://logos-world.net/wp-content/uploads/2020/09/Pinterest-Logo.png" class="img">
+         </div>
+
+</body>
+</html>
