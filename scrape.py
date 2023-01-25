@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request , send_file
+from flask import Flask, render_template, request , send_file, send_from_directory
 from datetime import date
 import requests
 from bs4 import BeautifulSoup
@@ -8,6 +8,10 @@ import pinterest,pinterestImages
 app = Flask(__name__)
 
 day = date.today()
+
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path,'static'),'favicon.ico',mimetype='image/favicon.jpg')
 
 @app.route('/')
 def index():
