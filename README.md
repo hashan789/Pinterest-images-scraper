@@ -11,18 +11,13 @@ Pinterest images scrapers can be used for a variety of purposes, including:
 
 The hierarchy of Pinterest images scraper refers to the different levels of abstraction at which Pinterest images scrapers operate. The different levels are:
 
-* **User input:** This is the first level, and it involves the user providing the input to the scraper, such as the search terms, the category of images to be scraped or the pinterest web addresses in which the images needs to be downloaded.
-* **Web scraping:** This is the second level, and it involves the scraper interacting with the Pinterest website to extract the image URLs. In this case, there are two ways of web scraping that occcur.
+* **User input:** This is the first step, and it involves the user providing the input to the scraper, such as the search terms, the category of images to be scraped or the pinterest web addresses in which the images needs to be downloaded.
+* **Web scraping:** This is the second step, and it involves the scraper interacting with the Pinterest website to extract the image URLs. In this case, there are two ways of web scraping that occcur.
 1. if user provides the input as a name, then scraper extracts the image URLs by using the keyword. 
-2. if user provides the input as a link, then a window will be opened in chrome browser and user have to scroll down in the window within limit time period. then scraper extracts the image URLs.
-* **Image downloading:** This is the third level, and it involves the scraper downloading the images from the URLs that were extracted in the previous level. This may involve tasks such as creating a connection to the image server, downloading the image data, and saving the image to disk.
-* **Image processing:** This is the fourth level, and it involves processing the images that were downloaded in the previous level. This may involve tasks such as resizing the images, converting the images to a different format, and adding watermarks to the images.
-* **Storage:** This is the fifth level, and it involves storing the processed images in a database or a file system. This may involve tasks such as creating a directory structure, uploading the images to a cloud storage service, or creating a database table to store the image metadata.
-
-The hierarchy of Pinterest images scraper is important because it allows scrapers to be modular and scalable. Each level of the hierarchy can be implemented using different techniques, and the levels can be combined in different ways to achieve different levels of accuracy and performance.
-* **Image downloading:** This is the third level, and it involves the scraper downloading the images from the URLs that were extracted in the previous level. This may involve tasks such as creating a connection to the image server, downloading the image data, and saving the image to disk.
-* **Image processing:** This is the fourth level, and it involves processing the images that were downloaded in the previous level. This may involve tasks such as resizing the images, converting the images to a different format, and adding watermarks to the images.
-* **Storage:** This is the fifth level, and it involves storing the processed images in a database or a file system. This may involve tasks such as creating a directory structure, uploading the images to a cloud storage service, or creating a database table to store the image metadata.
+2. if user provides the input as a link, a window will be opened in chrome browser and user have to scroll down in the window within limit time period. then scraper extracts the image URLs.
+* **Image downloading:** This is the third step, and it involves the scraper downloading the images from the URLs that were extracted in the previous step. This involves tasks including creating a connection to the image server, downloading the image data, and saving the image to disk.
+* **Image processing:** This is the fourth step, and it involves processing the images that were downloaded in the previous level. This involves tasks including resizing the images, converting the images to a different format, and adding watermarks to the images.
+* **Storage:** This is the final step, and it involves storing the processed images in a file system. This involves tasks such as creating a directory structure, uploading the images to a cloud storage service, or creating a database table to store the image metadata.
 
 The hierarchy of Pinterest images scraper is important because it allows scrapers to be modular and scalable. Each level of the hierarchy can be implemented using different techniques, and the levels can be combined in different ways to achieve different levels of accuracy and performance.
 
